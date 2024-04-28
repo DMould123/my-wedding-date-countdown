@@ -8,3 +8,13 @@ body {
   font-family: cursive;
   background-color: coral;
 }
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wedding-year {
+  font-size: 50px;
+  font-weight: bold;
+}
