@@ -22,6 +22,7 @@ h2 {
   font-weight: bold;
 }
 
+/* Countdown styling */
 .wedding-countdown {
   margin: 30px;
   background-color: #fff;
@@ -69,6 +70,7 @@ h2 {
   content: 'Seconds';
 }
 
+/* Footer */
 .footer {
   display: flex;
   flex-direction: column;
@@ -83,6 +85,7 @@ h2 {
   margin-bottom: 10px;
 }
 
+/* Social Links */
 .social-links {
   display: flex;
   gap: 20px;
