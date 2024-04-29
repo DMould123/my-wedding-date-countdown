@@ -68,3 +68,24 @@ h2 {
 .wedding-countdown #wedding-seconds::before {
   content: 'Seconds';
 }
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #6d6875;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .wedding-countdown div {
+    font-size: 2em;
+    width: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wedding-countdown div {
+    font-size: 1.5em;
+    width: 60px;
+  }
+}
