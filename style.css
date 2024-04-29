@@ -69,10 +69,36 @@ h2 {
   content: 'Seconds';
 }
 
-footer {
-  text-align: center;
-  margin-top: 20px;
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9eded;
   color: #6d6875;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.footer-text {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #6d6875;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #000;
+}
+
+.social-links i {
+  font-size: 24px;
 }
 
 /* Media queries for responsiveness */
