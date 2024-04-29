@@ -3,18 +3,68 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   justify-content: center;
   font-family: cursive;
-  background-color: coral;
+  background-color: #f9eded;
 }
 
 h2 {
+  color: #6d6875;
+  text-align: center;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
 }
 
 .wedding-year {
-  font-size: 50px;
+  font-size: 5em;
+  color: #6d6875;
   font-weight: bold;
+}
+
+.wedding-countdown {
+  margin: 30px;
+  background-color: #fff;
+  width: 100%;
+  color: #6d6875;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wedding-countdown div {
+  margin: 0 15px;
+  font-size: 2.5em;
+  font-weight: 500;
+  margin-top: -25px;
+  position: relative;
+  text-align: center;
+  width: 100px;
+}
+
+.wedding-countdown div::before {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  font-size: 0.35em;
+  line-height: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  width: 100%;
+  height: 35px;
+}
+.wedding-countdown #wedding-days::before {
+  content: 'Days';
+}
+.wedding-countdown #wedding-hours::before {
+  content: 'Hours';
+}
+.wedding-countdown #wedding-minutes::before {
+  content: 'Minutes';
+}
+.wedding-countdown #wedding-seconds::before {
+  content: 'Seconds';
 }
