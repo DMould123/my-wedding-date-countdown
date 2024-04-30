@@ -4,7 +4,6 @@
 
 This Wedding Countdown WebPage is a simple project to display a countdown to your wedding date. It features an animated countdown timer and links to the creator's social media profiles.
 
-
 ## Objectives 🎯
 
 The objectives of the Wedding Countdown WebPage project include:
@@ -26,15 +25,17 @@ The objectives of the Wedding Countdown WebPage project include:
 
 To use this app, simply clone the repository to your local machine.
 
-
 ```bash
-git clone 
-cd 
+git clone https://github.com/DMould123/my-wedding-date-countdown.git
+cd wedding-date-countdown
+Open the index.html file in your preferred web browser or deploy the project on a web server.
 ```
 
 ## Features ✨
 
-- 
+- Countdown timer displaying days, hours, minutes, and seconds until the wedding date. ⏳📆⏱️
+- Animation effects for an engaging user experience. 🎉✨
+- Social media links for easy access to the creator's profiles. 🔗👤
 
 ## License 📝
 
