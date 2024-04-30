@@ -1,11 +1,6 @@
-/* Reset default margin and padding */
 body {
   margin: 0;
   padding: 0;
-}
-
-/* Center content vertically and horizontally */
-body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,16 +23,16 @@ body {
 /* Apply animation to h2 element */
 h2 {
   color: #6d6875;
-  font-size: 2.5em; /* Increase the font size */
+  font-size: 2.5em;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 6px; /* Adjust letter spacing */
+  letter-spacing: 6px;
   animation: slideIn 1s ease forwards;
 }
 
 /* Define styles for the wedding year */
 .wedding-year {
-  font-size: 7em; /* Increase the font size */
+  font-size: 7em;
   color: #6d6875;
   font-weight: bold;
   opacity: 0;
@@ -70,13 +65,13 @@ h2 {
 
 /* Define styles for the countdown digits */
 .wedding-countdown div {
-  font-size: 3.5em; /* Increase the font size */
+  font-size: 3.5em;
   font-weight: 500;
   margin: 0 15px;
-  margin-top: -30px; /* Adjust margin */
+  margin-top: -30px;
   position: relative;
   text-align: center;
-  width: 120px; /* Adjust width */
+  width: 120px;
 }
 
 /* Define styles for the countdown unit labels */
@@ -117,7 +112,7 @@ h2 {
   align-items: center;
   background-color: #f9eded;
   color: #6d6875;
-  padding: 40px; /* Increase padding */
+  padding: 40px;
   margin-top: auto;
 }
 
@@ -137,8 +132,8 @@ h2 {
 .social-links {
   display: flex;
   gap: 20px;
-  opacity: 1; /* Ensure the social links are initially visible */
-  animation: fadeIn 1s ease forwards; /* Apply fadeIn animation */
+  opacity: 1;
+  animation: fadeIn 1s ease forwards;
 }
 
 .social-links a {
@@ -158,14 +153,14 @@ h2 {
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .wedding-countdown div {
-    font-size: 2.5em; /* Adjust font size */
+    font-size: 2.5em;
     width: 70px;
   }
 }
 
 @media (max-width: 576px) {
   .wedding-countdown div {
-    font-size: 2em; /* Adjust font size */
+    font-size: 2em;
     width: 60px;
   }
 }
