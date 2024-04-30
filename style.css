@@ -1,10 +1,16 @@
+/* Reset default margin and padding */
 body {
   margin: 0;
+  padding: 0;
+}
+
+/* Center content vertically and horizontally */
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   justify-content: center;
+  height: 100vh;
   font-family: cursive;
   background-color: #f9eded;
 }
@@ -22,20 +28,23 @@ body {
 /* Apply animation to h2 element */
 h2 {
   color: #6d6875;
+  font-size: 2.5em; /* Increase the font size */
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 6px; /* Adjust letter spacing */
   animation: slideIn 1s ease forwards;
 }
 
+/* Define styles for the wedding year */
 .wedding-year {
-  font-size: 5em;
+  font-size: 7em; /* Increase the font size */
   color: #6d6875;
   font-weight: bold;
   opacity: 0;
   animation: fadeInUp 1s ease forwards;
 }
 
+/* Define animation for fadeInUp */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -59,16 +68,18 @@ h2 {
   align-items: center;
 }
 
+/* Define styles for the countdown digits */
 .wedding-countdown div {
-  margin: 0 15px;
-  font-size: 2.5em;
+  font-size: 3.5em; /* Increase the font size */
   font-weight: 500;
-  margin-top: -25px;
+  margin: 0 15px;
+  margin-top: -30px; /* Adjust margin */
   position: relative;
   text-align: center;
-  width: 100px;
+  width: 120px; /* Adjust width */
 }
 
+/* Define styles for the countdown unit labels */
 .wedding-countdown div::before {
   content: '';
   position: absolute;
@@ -82,15 +93,19 @@ h2 {
   width: 100%;
   height: 35px;
 }
+
 .wedding-countdown #wedding-days::before {
   content: 'Days';
 }
+
 .wedding-countdown #wedding-hours::before {
   content: 'Hours';
 }
+
 .wedding-countdown #wedding-minutes::before {
   content: 'Minutes';
 }
+
 .wedding-countdown #wedding-seconds::before {
   content: 'Seconds';
 }
@@ -102,16 +117,11 @@ h2 {
   align-items: center;
   background-color: #f9eded;
   color: #6d6875;
-  padding: 20px;
+  padding: 40px; /* Increase padding */
   margin-top: auto;
 }
 
-.footer-text {
-  margin-bottom: 10px;
-  opacity: 0;
-  animation: fadeIn 1s ease forwards;
-}
-
+/* Define animation for fadeIn */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -123,12 +133,12 @@ h2 {
   }
 }
 
-/* Social Links */
+/* Define styles for the social links */
 .social-links {
   display: flex;
   gap: 20px;
-  opacity: 0;
-  animation: fadeIn 1s ease forwards;
+  opacity: 1; /* Ensure the social links are initially visible */
+  animation: fadeIn 1s ease forwards; /* Apply fadeIn animation */
 }
 
 .social-links a {
@@ -142,20 +152,20 @@ h2 {
 }
 
 .social-links i {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .wedding-countdown div {
-    font-size: 2em;
+    font-size: 2.5em; /* Adjust font size */
     width: 70px;
   }
 }
 
 @media (max-width: 576px) {
   .wedding-countdown div {
-    font-size: 1.5em;
+    font-size: 2em; /* Adjust font size */
     width: 60px;
   }
 }
