@@ -2,17 +2,17 @@
 
 ## Description 🌍
 
-This Wedding Countdown WebPage is a simple project to display a countdown to your wedding date. It features an animated countdown timer and links to the creator's social media profiles.
+This Wedding Countdown WebPage is a project to display a countdown to my own special day. It features an animated countdown timer and links to my social media profiles. Check them out!
 
 ## Objectives 🎯
 
 The objectives of the Wedding Countdown WebPage project include:
 
-- 🌟 Displaying a countdown timer to the wedding date: Provide users with an engaging way to track the time until the wedding day.
-- 🚀 Creating an engaging and visually appeali  ng user interface: Enhance user experience through visually appealing design and animations.
-- 🎨 Incorporating animations for an enhanced user experience: Use animations to make the countdown timer more dynamic and engaging.
-- 🔄 Providing seamless navigation between different sections: Ensure users can easily navigate between the countdown timer and social media links.
-- 🌐 Showcasing proficiency in HTML, CSS, and JavaScript: Demonstrate expertise in front-end web development technologies through implementation of the project.
+- 🌟 Displays a countdown timer to a wedding date: Provide users with an engaging way to track the time until their wedding day.
+- 🚀 Creates an engaging and visually appealing user interface: Enhances user experience through visually appealing design and animations.
+- 🎨 Incorporates animations for an enhanced user experience: Uses animations to make the countdown timer more dynamic and engaging.
+- 🔄 Provides seamless navigation between different sections: Ensure users can easily navigate between the countdown timer and my social media links.
+- 🌐 Showcases my proficiency in HTML, CSS, and JavaScript: Demonstrates my expertise in front-end web development technologies through implementation of the project.
 
 ## Tech Stack 💻
 
@@ -35,7 +35,7 @@ Open the index.html file in your preferred web browser or deploy the project on 
 
 - Countdown timer displaying days, hours, minutes, and seconds until the wedding date. ⏳📆⏱️
 - Animation effects for an engaging user experience. 🎉✨
-- Social media links for easy access to the creator's profiles. 🔗👤
+- Social media links for easy access to my profiles. 🔗👤
 
 ## License 📝
 
