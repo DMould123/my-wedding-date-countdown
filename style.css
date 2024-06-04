@@ -162,5 +162,7 @@ h2 {
   .wedding-countdown div {
     font-size: 2em;
     width: 60px;
-  }
+  },
+  .wedding-year {
+    font-size: 4em;
 }
