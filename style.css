@@ -162,7 +162,20 @@ h2 {
   .wedding-countdown div {
     font-size: 2em;
     width: 60px;
-  },
+  }
   .wedding-year {
     font-size: 4em;
+  }
+}
+
+/* Media query to adjust font size for smaller screens */
+@media (max-width: 480px) {
+  .wedding-year {
+    font-size: 3em;
+  }
+
+  .wedding-countdown div {
+    font-size: 1.5em;
+    width: 50px;
+  }
 }
