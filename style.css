@@ -72,6 +72,11 @@ h2 {
   position: relative;
   text-align: center;
   width: 120px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.wedding-countdown div:hover {
+  transform: scale(1.1);
 }
 
 /* Define styles for the countdown unit labels */
@@ -177,5 +182,17 @@ h2 {
   .wedding-countdown div {
     font-size: 1.5em;
     width: 50px;
+  }
+}
+
+/* Media query for extra small screens (phones in portrait mode) */
+@media (max-width: 360px) {
+  .wedding-year {
+    font-size: 2.5em;
+  }
+
+  .wedding-countdown div {
+    font-size: 1.2em;
+    width: 40px;
   }
 }

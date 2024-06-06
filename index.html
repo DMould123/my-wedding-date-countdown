@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mollie & David's wedding countdown timer. Join us in celebrating our special day with a live countdown."
+    />
+    <meta
+      name="keywords"
+      content="wedding, countdown, Mollie, David, celebration, timer"
+    />
+    <meta name="author" content="David Mould" />
     <title>Mollie & David Wedding Countdown Timer</title>
     <link rel="icon" type="image/png" href="wedding.png" />
     <link rel="stylesheet" href="style.css" />
@@ -18,29 +27,28 @@
   </head>
   <body>
     <h2>
-      Countdown to our wedding<i class="fa-solid fa-champagne-glasses"></i>
+      Countdown to our wedding<i
+        class="fa-solid fa-champagne-glasses"
+        aria-hidden="true"
+      ></i>
     </h2>
-    <div class="wedding-year">14/09/24</div>
-    <div class="wedding-countdown">
-      <div id="wedding-days">00</div>
-      <div id="wedding-hours">00</div>
-      <div id="wedding-minutes">00</div>
-      <div id="wedding-seconds">00</div>
+    <div class="wedding-year" aria-label="Wedding date">14/09/24</div>
+    <div class="wedding-countdown" role="timer" aria-live="polite">
+      <div id="wedding-days" aria-label="Days">00</div>
+      <div id="wedding-hours" aria-label="Hours">00</div>
+      <div id="wedding-minutes" aria-label="Minutes">00</div>
+      <div id="wedding-seconds" aria-label="Seconds">00</div>
     </div>
     <footer class="footer">
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/david-mould-b6731a21a/">
-          <i class="bx bxl-linkedin"></i>
-        </a>
-        <a href="https://twitter.com/DM12_51">
-          <i class="bx bxl-twitter"></i>
-        </a>
-        <a href="https://github.com/DMould123">
-          <i class="bx bxl-github"></i>
-        </a>
+        <a href="https://www.linkedin.com/in/david-mould-b6731a21a/"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a href="https://twitter.com/DM12_51"><i class="bx bxl-twitter"></i></a>
+        <a href="https://github.com/DMould123"><i class="bx bxl-github"></i></a>
       </div>
       David Mould 2024 ©
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
