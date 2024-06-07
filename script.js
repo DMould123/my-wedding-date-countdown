@@ -39,3 +39,28 @@ function updateWeddingCountdown() {
   // Schedule the updateWeddingCountdown function to be called again after 1 second
   setTimeout(updateWeddingCountdown, 1000)
 }
+// Slideshow Controls
+let slideIndex = 1
+showSlides(slideIndex)
+
+function plusSlides(n) {
+  showSlides((slideIndex += n))
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n))
+}
+
+function showSlides(n) {
+  const slides = document.querySelectorAll('#slideshow-container .Containers')
+  const dots = document.querySelectorAll('#slideshow-container .dots')
+
+  if (n > slides.length) slideIndex = 1
+  if (n < 1) slideIndex = slides.length
+
+  slides.forEach((slide) => (slide.style.display = 'none'))
+  dots.forEach((dot) => (dot.className = dot.className.replace(' enable', '')))
+
+  slides[slideIndex - 1].style.display = 'block'
+  dots[slideIndex - 1].className += ' enable'
+}
