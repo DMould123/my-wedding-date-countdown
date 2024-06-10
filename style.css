@@ -112,27 +112,62 @@ h2 {
   color: #6d6875;
   padding: 40px;
   margin-top: auto;
+  opacity: 0;
+  animation: footerFadeIn 1s ease forwards;
 }
 
 .social-links {
   display: flex;
   gap: 20px;
-  opacity: 1;
-  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards 0.5s;
 }
 
 .social-links a {
   color: #6d6875;
   text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-links a:hover {
   color: #000;
   transform: scale(1.2);
+  animation: bounce 0.3s ease;
 }
 
 .social-links i {
   font-size: 36px;
+}
+
+/* Keyframes */
+@keyframes footerFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 /* Media Queries */
