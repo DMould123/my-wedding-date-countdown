@@ -40,6 +40,21 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 6px;
   animation: slideIn 1s ease forwards;
+  animation: bounceIn 1s ease forwards;
+}
+
+@keyframes bounceIn {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 /* Wedding Year */
