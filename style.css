@@ -103,6 +103,21 @@ h2 {
   content: 'Seconds';
 }
 
+/* Countdown Number Animation */
+.wedding-countdown div {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
 /* Footer */
 .footer {
   display: flex;
