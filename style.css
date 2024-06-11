@@ -277,6 +277,27 @@ h2 {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Button Hover Animation */
+.slideshow-container .Back:hover,
+.slideshow-container .forward:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25%,
+  75% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
 /* Dots */
 .dots {
   cursor: pointer;
@@ -292,6 +313,21 @@ h2 {
 .enable,
 .dots:hover {
   background-color: #717171;
+}
+
+/* Dot Hover Animation */
+.dots:hover {
+  animation: bounceDot 0.5s;
+}
+
+@keyframes bounceDot {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 /* Fading Animation */
