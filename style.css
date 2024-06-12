@@ -133,6 +133,15 @@ h2 {
   }
 }
 
+h2,
+.wedding-year {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.wedding-countdown div {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
 /* Footer */
 .footer {
   display: flex;
