@@ -40,27 +40,64 @@ function updateWeddingCountdown() {
   setTimeout(updateWeddingCountdown, 1000)
 }
 // Slideshow Controls
-let slideIndex = 1
-showSlides(slideIndex)
+let slideIndex = 0
+let slides = document.getElementsByClassName('Containers')
+let dots = document.getElementsByClassName('dots')
+let timeoutHandle
 
+showSlides()
+
+// Function to show slides automatically
+function showSlides() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none'
+  }
+  slideIndex++
+  if (slideIndex > slides.length) {
+    slideIndex = 1
+  }
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(' enable', '')
+  }
+  slides[slideIndex - 1].style.display = 'block'
+  dots[slideIndex - 1].className += ' enable'
+  timeoutHandle = setTimeout(showSlides, 5000) // Changes the image every 5 seconds
+}
+
+// Function to show the current slide
+function showCurrentSlide() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none'
+  }
+  if (slideIndex > slides.length) {
+    slideIndex = 1
+  }
+  if (slideIndex < 1) {
+    slideIndex = slides.length
+  }
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(' enable', '')
+  }
+  slides[slideIndex - 1].style.display = 'block'
+  dots[slideIndex - 1].className += ' enable'
+}
+
+// Slideshow Controls
 function plusSlides(n) {
-  showSlides((slideIndex += n))
+  clearTimeout(timeoutHandle)
+  if (slideIndex > slides.length) {
+    slideIndex = 1
+  }
+  if (slideIndex < 1) {
+    slideIndex = slides.length
+  }
+  showCurrentSlide()
+  timeoutHandle = setTimeout(showSlides, 5000) // Restart the automatic sliding
 }
 
 function currentSlide(n) {
-  showSlides((slideIndex = n))
-}
-
-function showSlides(n) {
-  const slides = document.querySelectorAll('#slideshow-container .Containers')
-  const dots = document.querySelectorAll('#slideshow-container .dots')
-
-  if (n > slides.length) slideIndex = 1
-  if (n < 1) slideIndex = slides.length
-
-  slides.forEach((slide) => (slide.style.display = 'none'))
-  dots.forEach((dot) => (dot.className = dot.className.replace(' enable', '')))
-
-  slides[slideIndex - 1].style.display = 'block'
-  dots[slideIndex - 1].className += ' enable'
+  clearTimeout(timeoutHandle)
+  slideIndex = n
+  showCurrentSlide()
+  timeoutHandle = setTimeout(showSlides, 5000) // Restart the automatic sliding
 }
