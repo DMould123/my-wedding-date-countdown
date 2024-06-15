@@ -39,6 +39,7 @@ function updateWeddingCountdown() {
   // Schedule the updateWeddingCountdown function to be called again after 1 second
   setTimeout(updateWeddingCountdown, 1000)
 }
+
 // Slideshow Controls
 let slideIndex = 0
 let slides = document.getElementsByClassName('Containers')
@@ -85,6 +86,7 @@ function showCurrentSlide() {
 // Slideshow Controls
 function plusSlides(n) {
   clearTimeout(timeoutHandle)
+  slideIndex += n
   if (slideIndex > slides.length) {
     slideIndex = 1
   }
