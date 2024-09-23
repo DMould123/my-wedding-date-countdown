@@ -62,7 +62,8 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = 'block'
   dots[slideIndex - 1].className += ' enable'
-  timeoutHandle = setTimeout(showSlides, 5000) // Changes the image every 5 seconds
+  // Changes the image every 5 seconds
+  timeoutHandle = setTimeout(showSlides, 5000)
 }
 
 // Function to show the current slide
@@ -94,12 +95,14 @@ function plusSlides(n) {
     slideIndex = slides.length
   }
   showCurrentSlide()
-  timeoutHandle = setTimeout(showSlides, 5000) // Restart the automatic sliding
+  // Restart the automatic sliding
+  timeoutHandle = setTimeout(showSlides, 5000)
 }
 
 function currentSlide(n) {
   clearTimeout(timeoutHandle)
   slideIndex = n
   showCurrentSlide()
-  timeoutHandle = setTimeout(showSlides, 5000) // Restart the automatic sliding
+  // Restart the automatic sliding
+  timeoutHandle = setTimeout(showSlides, 5000)
 }
