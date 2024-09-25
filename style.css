@@ -348,3 +348,11 @@ h2 {
   height: 350px;
   animation: fadeInZoom var(--animation-duration) ease forwards;
 }
+
+.congrats-message {
+  font-size: 2.5em;
+  color: var(--main-color);
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 1s ease forwards;
+}

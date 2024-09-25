@@ -12,31 +12,33 @@ updateWeddingCountdown()
 
 // Implement function to update the wedding countdown
 function updateWeddingCountdown() {
-  // Get the current time
   const current = new Date().getTime()
-
-  // Calculate the remaining time until the wedding
   const remainingTime = weddingDate - current
 
-  // Define constants for milliseconds in seconds, minutes, hours, and days
+  if (remainingTime < 0) {
+    // The wedding has already happened
+    document.querySelector('.wedding-countdown').innerHTML = `
+      <h3 class="congrats-message">Mollie & David are happily married! 🎉</h3>
+    `
+    // Optionally stop further updates by returning early
+    return
+  }
+
   const seconds = 1000
   const minutes = seconds * 60
   const hours = minutes * 60
   const days = hours * 24
 
-  // Calculate the remaining days, hours, minutes, and seconds
   const remainingDays = Math.floor(remainingTime / days)
   const remainingHours = Math.floor((remainingTime % days) / hours)
   const remainingMinutes = Math.floor((remainingTime % hours) / minutes)
   const remainingSeconds = Math.floor((remainingTime % minutes) / seconds)
 
-  // Update the elements with the new calculated values
   getDays.innerText = remainingDays
   getHours.innerText = remainingHours
   getMinutes.innerText = remainingMinutes
   getSeconds.innerText = remainingSeconds
 
-  // Schedule the updateWeddingCountdown function to be called again after 1 second
   setTimeout(updateWeddingCountdown, 1000)
 }
 
