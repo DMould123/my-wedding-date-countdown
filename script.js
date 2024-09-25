@@ -18,7 +18,7 @@ function updateWeddingCountdown() {
   if (remainingTime < 0) {
     // The wedding has already happened
     document.querySelector('.wedding-countdown').innerHTML = `
-      <h3 class="congrats-message">Mollie & David are happily married! 🎉</h3>
+      <h3 class="congrats-message">Mollie & David are happily married! 🎉💍❤️</h3>
     `
     // Optionally stop further updates by returning early
     return
