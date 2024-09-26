@@ -2,7 +2,7 @@
 
 ## Description 🌍
 
-This Wedding Countdown WebPage is a project to display a countdown to my own special day. It features an animated countdown timer and links to my social media profiles. Check them out!
+This Wedding Countdown WebPage is a special project designed to track the days leading up to my wedding day. The page features an animated countdown timer, providing users with an interactive way to follow the time left until our celebration. It also includes links to my social media profiles. Feel free to check them out!
 
 ## Objectives 🎯
 
